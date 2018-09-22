@@ -17,6 +17,9 @@ namespace SportsStore.Domain.Concrete
 {
     /// <summary>
     /// EF ORM框架的上下文类：属性对应表明
+    ///     处理模型与数据库关联起来
+    ///     注意：如何告诉 EF 如何连接到数据库，需要在网站的配置文件中添加一条数据库连接字符串，该字符串的
+    ///     名称与这个上下文类的名称相同。
     /// </summary>
     public class EFDbContext : DbContext
     {

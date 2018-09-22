@@ -14,7 +14,10 @@
     </div>
     <div class="row panel">
         <div id="categories" class="col-xs-3">
-            稍后在这里放一些有用的东西
+            @*稍后在这里放一些有用的东西*@
+
+            <!--调用包含控制器 动作方法的分部视图，并返回视图结果-->
+            @Html.Action("Menu", "Nav")
         </div>
         <div class="col-xs-8">
             @RenderBody()

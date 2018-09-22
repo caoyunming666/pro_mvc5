@@ -7,14 +7,9 @@
 
 @foreach (var p in Model.Products)
 {
-    <div class="well">
-        <h3>
-            <strong>@p.Name</strong>
-            <span class="pull-right label label-primary">@p.Price.ToString("c")</span>
-        </h3>
-        <span class="lead">@p.Description</span>
-    </div>
+    //把固定的html内容做成分部视图：此分部视图需要一个 Product 类型的Model参数
+    @Html.Partial("ProductSummary", p)
 }
 <div class="btn-group pull-right">
-    @Html.PageLinks(Model.PagingInfo, x => Url.Action("List", new { page = x }))
+    @Html.PageLinks(Model.PagingInfo, x => Url.Action("List", new { page = x, category = Model.CurrentCategroy }))
 </div>
