@@ -148,3 +148,5 @@
 /SportsStore/SportsStore.WebUI/obj/Debug/SportsStore.WebUI.csprojResolveAssemblyReference.cache
 /SportsStore/SportsStore.WebUI/obj/Debug/SportsStore.WebUI.dll
 /SportsStore/SportsStore.WebUI/obj/Debug/SportsStore.WebUI.pdb
+/SportsStore/SportsStore.WebUI/App_Data/SportsStore.Domain.Concrete.EFDbContext.mdf
+/SportsStore/SportsStore.WebUI/App_Data/SportsStore.Domain.Concrete.EFDbContext_log.ldf
