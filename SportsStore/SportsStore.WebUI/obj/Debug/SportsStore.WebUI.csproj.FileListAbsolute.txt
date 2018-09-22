@@ -50,3 +50,17 @@ D:\project_files\ProMVC5_20180922\SportsStore\SportsStore.WebUI\bin\zh-Hans\Syst
 D:\project_files\ProMVC5_20180922\SportsStore\SportsStore.WebUI\obj\Debug\SportsStore.WebUI.csprojResolveAssemblyReference.cache
 D:\project_files\ProMVC5_20180922\SportsStore\SportsStore.WebUI\obj\Debug\SportsStore.WebUI.dll
 D:\project_files\ProMVC5_20180922\SportsStore\SportsStore.WebUI\obj\Debug\SportsStore.WebUI.pdb
+D:\project_files\ProMVC5_20180922\SportsStore\SportsStore.WebUI\bin\Moq.dll
+D:\project_files\ProMVC5_20180922\SportsStore\SportsStore.WebUI\bin\Ninject.dll
+D:\project_files\ProMVC5_20180922\SportsStore\SportsStore.WebUI\bin\Ninject.Web.Common.dll
+D:\project_files\ProMVC5_20180922\SportsStore\SportsStore.WebUI\bin\Ninject.Web.Mvc.dll
+D:\project_files\ProMVC5_20180922\SportsStore\SportsStore.WebUI\bin\SportsStore.Domain.dll
+D:\project_files\ProMVC5_20180922\SportsStore\SportsStore.WebUI\bin\WebActivator.dll
+D:\project_files\ProMVC5_20180922\SportsStore\SportsStore.WebUI\bin\SportsStore.Domain.pdb
+D:\project_files\ProMVC5_20180922\SportsStore\SportsStore.WebUI\bin\Moq.xml
+D:\project_files\ProMVC5_20180922\SportsStore\SportsStore.WebUI\bin\Ninject.pdb
+D:\project_files\ProMVC5_20180922\SportsStore\SportsStore.WebUI\bin\Ninject.xml
+D:\project_files\ProMVC5_20180922\SportsStore\SportsStore.WebUI\bin\Ninject.Web.Common.pdb
+D:\project_files\ProMVC5_20180922\SportsStore\SportsStore.WebUI\bin\Ninject.Web.Common.xml
+D:\project_files\ProMVC5_20180922\SportsStore\SportsStore.WebUI\bin\Ninject.Web.Mvc.pdb
+D:\project_files\ProMVC5_20180922\SportsStore\SportsStore.WebUI\bin\Ninject.Web.Mvc.xml
