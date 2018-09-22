@@ -1,0 +1,5 @@
+D:\project_files\ProMVC5_20180922\SportsStore\SportsStore.Domain\bin\Debug\SportsStore.Domain.dll
+D:\project_files\ProMVC5_20180922\SportsStore\SportsStore.Domain\bin\Debug\SportsStore.Domain.pdb
+D:\project_files\ProMVC5_20180922\SportsStore\SportsStore.Domain\obj\Debug\SportsStore.Domain.csprojResolveAssemblyReference.cache
+D:\project_files\ProMVC5_20180922\SportsStore\SportsStore.Domain\obj\Debug\SportsStore.Domain.dll
+D:\project_files\ProMVC5_20180922\SportsStore\SportsStore.Domain\obj\Debug\SportsStore.Domain.pdb

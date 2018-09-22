@@ -1,0 +1,7 @@
+D:\project_files\ProMVC5_20180922\SportsStore\SportsStore.UnitTests\bin\Debug\SportsStore.UnitTests.dll
+D:\project_files\ProMVC5_20180922\SportsStore\SportsStore.UnitTests\bin\Debug\SportsStore.UnitTests.pdb
+D:\project_files\ProMVC5_20180922\SportsStore\SportsStore.UnitTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+D:\project_files\ProMVC5_20180922\SportsStore\SportsStore.UnitTests\bin\Debug\zh-Hans\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
+D:\project_files\ProMVC5_20180922\SportsStore\SportsStore.UnitTests\obj\Debug\SportsStore.UnitTests.csprojResolveAssemblyReference.cache
+D:\project_files\ProMVC5_20180922\SportsStore\SportsStore.UnitTests\obj\Debug\SportsStore.UnitTests.dll
+D:\project_files\ProMVC5_20180922\SportsStore\SportsStore.UnitTests\obj\Debug\SportsStore.UnitTests.pdb
