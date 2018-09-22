@@ -16,6 +16,9 @@ using System.Collections.Generic;
 
 namespace SportsStore.Domain.Abstract
 {
+    /// <summary>
+    /// 产品接口：提供获取产品集合方法(只提供方法，在派生类中实现具体细节)
+    /// </summary>
     public interface IProductsRepository
     {
         IEnumerable<Product> Products { get; }

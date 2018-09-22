@@ -16,7 +16,7 @@ using System.Data.Entity;
 namespace SportsStore.Domain.Concrete
 {
     /// <summary>
-    /// 上下文类
+    /// EF ORM框架的上下文类：属性对应表明
     /// </summary>
     public class EFDbContext : DbContext
     {

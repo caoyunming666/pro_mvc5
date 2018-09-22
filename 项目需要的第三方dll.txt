@@ -1,0 +1,22 @@
+项目所需的安装包：
+install-package ninject -version 3.0.1.10 -projectname SportsStore.WebUI
+install-package ninject.web.common -version 3.0.0.7 -projectname SportsStore.WebUI
+install-package ninject.mvc3 -version 3.0.0.6 -projectname SportsStore.WebUI
+install-package ninject -version 3.0.1.10 -projectname SportsStore.UnitTests
+install-package ninject.web.common -version 3.0.0.7 -projectname SportsStore.UnitTests
+install-package ninject.mvc3 -version 3.0.0.6 -projectname SportsStore.UnitTests
+install-package Moq -version 4.1.1309.1617 -projectname SportsStore.WebUI
+install-package Moq -version 4.1.1309.1617 -projectname SportsStore.UnitTests
+install-package Microsoft.Aspnet.Mvc -version 5.0.0 -projectname SportsStore.Domain
+install-package Microsoft.Aspnet.Mvc -version 5.0.0 -projectname SportsStore.UnitTests
+
+
+install-package EntityFramework -projectname SportsStore.Domain
+install-package EntityFramework -projectname SportsStore.WebUI
+
+
+
+install-package -version 3.0.0 bootstrap -projectname SportsStore.WebUI
+
+
+Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\project_files\ProMVC5_20180922\SportsStore\SportsStore.WebUI\App_Data\SportsStore.mdf;Integrated Security=True

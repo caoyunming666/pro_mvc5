@@ -149,6 +149,11 @@
     <Content Include="App_Data\SportsStore_log.ldf">
       <DependentUpon>SportsStore.mdf</DependentUpon>
     </Content>
+    <Content Include="asset\css\bootstrap.css" />
+    <Content Include="asset\css\bootstrap.min.css" />
+    <Content Include="asset\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="asset\js\bootstrap.js" />
+    <Content Include="asset\js\bootstrap.min.js" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -159,7 +164,10 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="HtmlHelpers\PagingHelpers.cs" />
     <Compile Include="InfrastructureDI\NinjectDependencyResolver.cs" />
+    <Compile Include="Models\ProductsListViewModel.cs" />
+    <Compile Include="Models\PageInfoViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -171,6 +179,9 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Product\List.cshtml" />
+    <Content Include="asset\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="asset\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="asset\fonts\glyphicons-halflings-regular.woff" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -178,9 +189,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Models\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\SportsStore.Domain\SportsStore.Domain.csproj">
       <Project>{60caab14-92f4-484b-8661-57f6414e54d7}</Project>

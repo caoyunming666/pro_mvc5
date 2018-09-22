@@ -24,6 +24,9 @@ namespace SportsStore.Domain.Concrete
     {
         private EFDbContext context = new EFDbContext();
 
+        /// <summary>
+        /// 实现接口定义的属性：获取产品数据
+        /// </summary>
         public IEnumerable<Product> Products
         {
             get
