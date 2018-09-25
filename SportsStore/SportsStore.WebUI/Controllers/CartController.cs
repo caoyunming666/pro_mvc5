@@ -22,9 +22,10 @@ namespace SportsStore.WebUI.Controllers
         }
 
 
-        public ViewResult Index(string returnUrl)
+        public ViewResult Index(ShopCart cart, string returnUrl)
         {
-            return View(new CartIndexViewModel { Cart = GetCart(), ReturnUrl = returnUrl });
+            //return View(new CartIndexViewModel { Cart = GetCart(), ReturnUrl = returnUrl });
+            return View(new CartIndexViewModel { Cart = cart, ReturnUrl = returnUrl });
         }
 
 
@@ -34,12 +35,13 @@ namespace SportsStore.WebUI.Controllers
         /// <param name="id"></param>
         /// <param name="returnUrl"></param>
         /// <returns></returns>
-        public RedirectToRouteResult AddToCart(int id, string returnUrl)
+        public RedirectToRouteResult AddToCart(ShopCart cart, int id, string returnUrl)
         {
             Product product = repository.Products.FirstOrDefault(x => x.Id == id);
             if (product != null)
             {
-                GetCart().AddItem(product, 1);
+                //GetCart().AddItem(product, 1);
+                cart.AddItem(product, 1);
             }
             return RedirectToAction("Index", new { returnUrl });
         }
@@ -50,34 +52,52 @@ namespace SportsStore.WebUI.Controllers
         /// <param name="id"></param>
         /// <param name="returnUrl"></param>
         /// <returns></returns>
-        public RedirectToRouteResult RemoveFormCart(int id, string returnUrl)
+        public RedirectToRouteResult RemoveFormCart(ShopCart cart, int id, string returnUrl)
         {
             Product product = repository.Products.FirstOrDefault(x => x.Id == id);
             if (product != null)
             {
-                GetCart().RemoveLine(product);
+                //GetCart().RemoveLine(product);
+                cart.RemoveLine(product);
             }
             return RedirectToAction("Index", new { returnUrl });
         }
 
 
         /// <summary>
-        /// 获取购物车信息
+        /// 显示购物车摘要
         /// </summary>
-        private ShopCart GetCart()
+        /// <param name="cart"></param>
+        /// <returns></returns>
+        public PartialViewResult Summary(ShopCart cart)
         {
-            ShopCart cart = (ShopCart)Session["Cart"];
-            if (cart == null)
-            {
-                cart = new ShopCart();
-
-                /* 
-                 * session对象默认存储在asp.net服务器的内存中，但你可以配置不同的存储方式，包括使用一个sql数据库
-                 *  ：留意这方面的技术文章
-                 */
-                Session["Cart"] = cart;
-            }
-            return cart;
+            return PartialView(cart);
         }
+
+
+        public ViewResult Checkout()
+        {
+            return View(new ShippingDetails());
+        }
+
+
+        //把生成cart对象的回话单独放在一个代码文件中，这样可以方便的对当前控制器进行单元测试
+        ///// <summary>
+        ///// 获取购物车信息
+        ///// </summary>
+        //private ShopCart GetCart()
+        //{
+        //    ShopCart cart = (ShopCart)Session["Cart"];
+        //    if (cart == null)
+        //    {
+        //        cart = new ShopCart();
+        //        /* 
+        //         * session对象默认存储在asp.net服务器的内存中，但你可以配置不同的存储方式，包括使用一个sql数据库
+        //         *  ：留意这方面的技术文章
+        //         */
+        //        Session["Cart"] = cart;
+        //    }
+        //    return cart;
+        //}
     }
 }
