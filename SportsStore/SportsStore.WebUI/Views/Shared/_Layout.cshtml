@@ -14,9 +14,16 @@
     </div>
     <div class="row panel">
         <div id="categories" class="col-xs-3">
-            @*稍后在这里放一些有用的东西*@
+            <!--
+            在产品列表页使用了 Html.Partial() 方式调用分部视图，在此页面使用 Html.Action() 方式调用分部视图
+            两种方式有什么不同以及优缺点？
+            分部视图（Partial View）及Html.Partial和Html.Action差异
+            信息来源：
+            https://www.cnblogs.com/Leon-Hu/p/5575311.html
 
-            <!--调用包含控制器 动作方法的分部视图，并返回视图结果-->
+            Html.Action() 返回的内容更灵活，适合权限菜单内容
+            -->
+            <!--调用包含控制器 动作方法的分部视图，并返回分部视图结果-->
             @Html.Action("Menu", "Nav")
         </div>
         <div class="col-xs-8">

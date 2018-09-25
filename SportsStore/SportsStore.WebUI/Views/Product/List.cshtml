@@ -7,6 +7,16 @@
 
 @foreach (var p in Model.Products)
 {
+    <!--
+    在产品列表页使用了 Html.Partial() 方式调用分部视图，在此页面使用 Html.Action() 方式调用分部视图
+    两种方式有什么不同以及优缺点？
+    分部视图（Partial View）及Html.Partial和Html.Action差异
+    信息来源：
+    https://www.cnblogs.com/Leon-Hu/p/5575311.html
+
+    Html.Partial() 适合固定不变的页面内容，类似页头，页脚之类的。
+    -->
+
     //把固定的html内容做成分部视图：此分部视图需要一个 Product 类型的Model参数
     @Html.Partial("ProductSummary", p)
 }
