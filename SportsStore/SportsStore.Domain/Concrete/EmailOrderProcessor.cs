@@ -22,12 +22,12 @@ namespace SportsStore.Domain.Concrete
 {
     public class EmailSettings
     {
-        public string MailToAddress = "";
-        public string MailFromAddress = "";
+        public string MailToAddress = "order@example.com";
+        public string MailFromAddress = "sportsstore@example.com";
         public bool UseSsl = true;
-        public string UserName = "";
-        public string PassWord = "";
-        public string ServerName = "";
+        public string UserName = "mystmpusername";
+        public string PassWord = "mystmppassword";
+        public string ServerName = "smtp.example.com";
         public int ServerPort = 587;
         public bool WriteAsFile = false;
         public string FileLocation = "";
