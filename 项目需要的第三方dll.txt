@@ -1,4 +1,4 @@
-ÏîÄ¿ËùÐèµÄ°²×°°ü£º
+é¡¹ç›®æ‰€éœ€çš„å®‰è£…åŒ…ï¼š
 install-package ninject -version 3.0.1.10 -projectname SportsStore.WebUI
 install-package ninject.web.common -version 3.0.0.7 -projectname SportsStore.WebUI
 install-package ninject.mvc3 -version 3.0.0.6 -projectname SportsStore.WebUI
