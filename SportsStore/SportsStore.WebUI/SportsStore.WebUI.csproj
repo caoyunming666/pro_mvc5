@@ -151,6 +151,7 @@
     </Content>
     <Content Include="asset\css\bootstrap.css" />
     <Content Include="asset\css\bootstrap.min.css" />
+    <Content Include="asset\css\ErrorStyles.css" />
     <Content Include="asset\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="asset\js\bootstrap.js" />
     <Content Include="asset\js\bootstrap.min.js" />
@@ -192,6 +193,7 @@
     <Content Include="Views\Cart\Index.cshtml" />
     <Content Include="Views\Cart\Summary.cshtml" />
     <Content Include="Views\Cart\Checkout.cshtml" />
+    <Content Include="Views\Cart\Completed.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -15,11 +15,12 @@ namespace SportsStore.WebUI.Controllers
     public class CartController : Controller
     {
         private IProductsRepository repository;
+        private IOrderProcessor orderProcessor;
 
         public CartController(IProductsRepository repo, IOrderProcessor proc)
         {
-
             this.repository = repo;
+            this.orderProcessor = proc;
         }
 
 
@@ -79,6 +80,25 @@ namespace SportsStore.WebUI.Controllers
         public ViewResult Checkout()
         {
             return View(new ShippingDetails());
+        }
+
+        [HttpPost]
+        public ViewResult Checkout(ShopCart cart, ShippingDetails shippingDetails)
+        {
+            if (cart.Lines.Count() == 0)
+            {
+                ModelState.AddModelError("", "购物车是空的");
+            }
+            if (ModelState.IsValid)
+            {
+                orderProcessor.ProcessOrder(cart, shippingDetails);
+                cart.Clear();
+                return View("Completed");
+            }
+            else
+            {
+                return View(shippingDetails);
+            }
         }
 
 

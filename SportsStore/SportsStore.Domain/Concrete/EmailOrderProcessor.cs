@@ -30,7 +30,7 @@ namespace SportsStore.Domain.Concrete
         public string ServerName = "smtp.example.com";
         public int ServerPort = 587;
         public bool WriteAsFile = false;
-        public string FileLocation = "";
+        public string FileLocation = @"D:\project_files\ProMVC5_20180922\SportsStore\SportsStore.WebUI\EmailFiles";
     }
 
 
