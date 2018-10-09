@@ -175,7 +175,9 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="HtmlHelpers\PagingHelpers.cs" />
+    <Compile Include="InfrastructureDI\Abstract\IAuthProvider.cs" />
     <Compile Include="InfrastructureDI\Binders\CartModelBinder.cs" />
+    <Compile Include="InfrastructureDI\Concrete\FormsAuthProvider.cs" />
     <Compile Include="InfrastructureDI\NinjectDependencyResolver.cs" />
     <Compile Include="Models\CartIndexViewModel.cs" />
     <Compile Include="Models\ProductsListViewModel.cs" />

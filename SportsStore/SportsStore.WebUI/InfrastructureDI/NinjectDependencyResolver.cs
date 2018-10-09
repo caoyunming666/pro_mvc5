@@ -7,6 +7,8 @@ using System;
 using System.Collections.Generic;
 using System.Web.Mvc;
 using System.Configuration;
+using SportsStore.WebUI.InfrastructureDI.Abstract;
+using SportsStore.WebUI.InfrastructureDI.Concrete;
 
 namespace SportsStore.WebUI.InfrastructureDI
 {
@@ -64,6 +66,8 @@ namespace SportsStore.WebUI.InfrastructureDI
 
             kernel.Bind<IOrderProcessor>().To<EmailOrderProcessor>()
                 .WithConstructorArgument("settings", emailSettings);
+
+            kernel.Bind<IAuthProvider>().To<FormsAuthProvider>();
         }
     }
 }

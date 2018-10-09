@@ -11,6 +11,7 @@ namespace SportsStore.WebUI.Controllers
     /// <summary>
     /// 管理
     /// </summary>
+    [Authorize]
     public class AdminController : Controller
     {
         private IProductsRepository repository;
