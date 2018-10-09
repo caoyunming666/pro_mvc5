@@ -6,11 +6,19 @@
     <title>@ViewBag.Title</title>
     <link href="~/asset/css/bootstrap.min.css" rel="stylesheet" />
     <link href="~/asset/css/ErrorStyles.css" rel="stylesheet" />
+    <script src="~/asset/js/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+
     @*<script src="~/asset/js/jquery-1.10.2.min.js"></script>
         <script src="~/asset/js/bootstrap.min.js"></script>*@
 </head>
 <body>
     <div>
+        @if (TempData["message"] != null)
+        {
+            <div class="alert alert-success">@TempData["message"]</div>
+        }
         @RenderBody()
     </div>
 </body>

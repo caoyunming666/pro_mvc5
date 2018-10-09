@@ -19,3 +19,4 @@ install-package EntityFramework -projectname SportsStore.WebUI
 install-package -version 3.0.0 bootstrap -projectname SportsStore.WebUI
 
 
+install-package Microsoft.jQuery.Unobtrusive.Validation -version 3.0.0 -projectname SportsStore.WebUI

@@ -4,6 +4,10 @@
 @{
     ViewBag.Title = "Addmin: Edit " + Model.Name;
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
+
+    //处于某种原因不需要在客户端验证时，需要使用以下语句
+    //HtmlHelper.ClientValidationEnabled = false;
+    //HtmlHelper.UnobtrusiveJavaScriptEnabled = false;
 }
 
 
@@ -11,7 +15,7 @@
     <div class="panel-heading">
         <h3>Edit @Model.Name</h3>
     </div>
-    @using (Html.BeginForm())
+    @using (Html.BeginForm("Edit","Admin"))
     {
         <div class="panel-body">
             @Html.HiddenFor(x => x.Id)
@@ -29,6 +33,7 @@
                         {
                             @Html.TextBox(property.PropertyName, null, new { @class = "form-control" })
                         }
+                        @Html.ValidationMessage(property.PropertyName)
                     </div>
                 }
             }
