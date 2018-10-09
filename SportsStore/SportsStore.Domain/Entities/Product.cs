@@ -9,14 +9,24 @@
 * ───────────────────────────────────
 * V0.01 2018/9/22 15:21:39 PC-CAOYUNMING
 */
-
+using System.ComponentModel.DataAnnotations;
+using System.Web.Mvc;
 
 namespace SportsStore.Domain.Entities
 {
     public class Product
     {
+        /// <summary>
+        /// 告诉mvc框架：将id属性渲染为隐藏的表单元素
+        /// </summary>
+        [HiddenInput(DisplayValue = false)]
         public int Id { get; set; }
         public string Name { get; set; }
+
+        /// <summary>
+        /// datatype注解：指示我们如何编辑一个值
+        /// </summary>
+        [DataType(DataType.MultilineText)]
         public string Description { get; set; }
         public decimal Price { get; set; }
         public string Category { get; set; }
