@@ -47,6 +47,7 @@ namespace SportsStore.WebUI.InfrastructureDI
         /// </summary>
         private void AddBindings()
         {
+            #region aband
             //添加假数据
             //Mock<IProductsRepository> mock = new Mock<IProductsRepository>();
             //mock.Setup(x => x.Products).Returns(new List<Product>
@@ -55,7 +56,8 @@ namespace SportsStore.WebUI.InfrastructureDI
             //    new Product { Name="篮球",Price=179 },
             //    new Product { Name="橄榄球",Price=95 },
             //});
-            //kernel.Bind<IProductsRepository>().ToConstant(mock.Object);
+            //kernel.Bind<IProductsRepository>().ToConstant(mock.Object); 
+            #endregion
 
             kernel.Bind<IProductsRepository>().To<EFProductRepository>();
 
