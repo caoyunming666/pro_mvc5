@@ -1,0 +1,35 @@
+﻿@using SportsStore.WebUI.Models
+@model LoginViewModel
+
+@{
+    ViewBag.Title = "Addmin: Log In";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+
+    //处于某种原因不需要在客户端验证时，需要使用以下语句
+    //HtmlHelper.ClientValidationEnabled = false;
+    //HtmlHelper.UnobtrusiveJavaScriptEnabled = false;
+}
+
+
+<div class="panel">
+    <div class="panel-heading">
+        <h3>Log In</h3>
+    </div>
+    <div class="panel-body">
+        <p class="lead">Please login to access the administration area:</p>
+        @using (Html.BeginForm())
+        {
+            @Html.ValidationSummary()
+            <div class="form-group">
+                <label>User Name:</label>
+                @Html.TextBoxFor(x => x.UserName, new { @class = "form-control" })
+            </div>
+
+            <div class="form-group">
+                <label>Password:</label>
+                @Html.PasswordFor(x => x.Password, new { @class = "form-control" })
+            </div>
+            <input type="submit" value="Log in" class="btn btn-primary" />
+        }
+    </div>
+</div>

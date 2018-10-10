@@ -10,6 +10,7 @@ namespace SportsStore.WebUI.Controllers
 {
     /// <summary>
     /// 管理
+    ///     应用过滤器进行授权 Authorize
     /// </summary>
     [Authorize]
     public class AdminController : Controller
@@ -33,10 +34,17 @@ namespace SportsStore.WebUI.Controllers
         }
 
         [HttpPost]
-        public ActionResult Edit(Product product)
+        public ActionResult Edit(Product product, HttpPostedFileBase image = null)
         {
             if (ModelState.IsValid)
             {
+                if (image != null)
+                {
+                    product.ImageMimeType = image.ContentType;
+                    product.ImageData = new byte[image.ContentLength];
+                    image.InputStream.Read(product.ImageData, 0, image.ContentLength);
+                }
+
                 repository.SaveProduct(product);
                 TempData["message"] = string.Format("{0} has been saved", product.Name);
                 return RedirectToAction("Index");

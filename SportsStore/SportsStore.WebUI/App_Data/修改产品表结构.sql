@@ -1,0 +1,1 @@
+﻿alter table [dbo].[Products] add [ImageData] varbinary(max) null,[ImageMimeType] nvarchar(50) null;
