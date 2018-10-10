@@ -20,3 +20,8 @@ install-package -version 3.0.0 bootstrap -projectname SportsStore.WebUI
 
 
 install-package Microsoft.jQuery.Unobtrusive.Validation -version 3.0.0 -projectname SportsStore.WebUI
+
+
+
+
+install-package Moq -version 4.1.1309.1617 -projectname UrlsAndRoutes.Tests
