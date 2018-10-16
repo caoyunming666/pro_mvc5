@@ -14,14 +14,13 @@ install-package Microsoft.Aspnet.Mvc -version 5.0.0 -projectname SportsStore.Uni
 install-package EntityFramework -projectname SportsStore.Domain
 install-package EntityFramework -projectname SportsStore.WebUI
 
-
-
 install-package -version 3.0.0 bootstrap -projectname SportsStore.WebUI
-
 
 install-package Microsoft.jQuery.Unobtrusive.Validation -version 3.0.0 -projectname SportsStore.WebUI
 
 
 
-
+//MVC特性：
 install-package Moq -version 4.1.1309.1617 -projectname UrlsAndRoutes.Tests
+
+install-package Microsoft.Aspnet.Mvc -version 5.0.0 -projectname UrlsAndRoutes.Tests
